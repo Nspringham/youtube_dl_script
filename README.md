@@ -1,4 +1,4 @@
-##youtube_dl_script
+## youtube_dl_script
 
 # Installation & Dependencies
 
@@ -13,3 +13,12 @@ Windows users can download an .exe file and place it in any location on their PA
 You will also need [ffmpeg](https://www.ffmpeg.org/download.html)
 
 
+# Setup & Use
+
+Change the working directory in the youtube-dl.py on line 17
+
+open command line and enter `python youtube-dl.py`
+
+You will then get a prompt to enter the whole url for a youtube video
+
+Enjoy saving time!
