@@ -21,4 +21,6 @@ open command line and enter `python youtube-dl.py`
 
 You will then get a prompt to enter the whole url for a youtube video
 
-Enjoy saving time!
+# Parameters
+
+Change your parameters in the command line to change the destination folder
