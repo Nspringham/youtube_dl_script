@@ -13,16 +13,22 @@ user_input = input("\nEnter full Youtube URL: ")
 
 cmd_call = command + user_input
 
-# command line argument to determine the folder
+# command line argument to determine the folder and change hte working directory to that folder
 if sys.argv[1] == "pod":
   directory = r"C:\Users\Nick\Music\podcasts"
+  os.chdir(directory)
 elif sys.argv[1] == "aco":
   directory = r"C:\Users\Nick\Music\acoustic"
+  os.chdir(directory)
 else:
   directory = r"C:\Users\Nick\Music"
+  directory = directory + "\\" + sys.argv[1]
+  if os.path.isdir(directory):
+    os.chdir(directory)
+  else:
+    os.mkdir(directory)
+    os.chdir(directory)
 
-# change directory
-os.chdir(directory)
 
 time.sleep(1)
 
