@@ -13,7 +13,7 @@ user_input = input("\nEnter full Youtube URL: ")
 
 cmd_call = command + user_input
 
-# command line argument to determine the folder and change hte working directory to that folder
+# command line argument to determine the folder and change the working directory to that folder
 if sys.argv[1] == "pod":
   directory = r"C:\Users\Nick\Music\podcasts"
   os.chdir(directory)
